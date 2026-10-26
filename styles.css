@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  background: #0f1115;
+  color: #e8e8e8;
+  line-height: 1.6;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #161a22;
+  border-bottom: 1px solid #262b36;
+}
+
+.logo {
+  color: #ffd166;
+  font-weight: 800;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav a {
+  color: #cfd6e4;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ffd166;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.review-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  background: #171b24;
+  border: 1px solid #262b36;
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.genre {
+  margin: 0;
+  color: #8fa3bf;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 2.2rem;
+}
+
+.year {
+  color: #8fa3bf;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.score {
+  background: #ffd166;
+  color: #111;
+  font-weight: 800;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.stars {
+  color: #ffd166;
+  letter-spacing: 2px;
+}
+
+.synopsis {
+  color: #cfd6e4;
+  border-left: 3px solid #ffd166;
+  padding-left: 1rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #262b36;
+  color: #9aa7ba;
+  font-size: 0.95rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #8fa3bf;
+  border-top: 1px solid #262b36;
+}
+
+@media (max-width: 720px) {
+  .review-card {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
